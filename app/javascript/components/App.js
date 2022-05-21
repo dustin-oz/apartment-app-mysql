@@ -5,13 +5,15 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+import Header from './components/Header'
 
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <Router>
+        <Header {...this.props} />
         <h1>Yo!</h1>
-      </React.Fragment>
+      </Router>
     );
   }
 }
