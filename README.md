@@ -69,7 +69,7 @@ root 'home#index'
 
 ### React Routing Config
 ```bash
-yarn add react-router-dom@5.3.0
+$ yarn add react-router-dom@5.3.0
 ```
 
 **app/javascript/components/App.js**
@@ -83,9 +83,9 @@ import {
 
 ### Reactstrap Config
 ```bash
-bundle add bootstrap
-mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
-yarn add reactstrap
+$ bundle add bootstrap
+$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+$ yarn add reactstrap
 ```
 
 **app/assets/stylesheets/application.scss**
@@ -98,8 +98,8 @@ yarn add reactstrap
 The Devise User model is going to have an association with the Apartment model. In this situation, the User will have many apartments and the Apartments will belong to a User.
 
 ```bash
-rails generate resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string image:text user_id:integer
-rails db:migrate
+$ rails generate resource Apartment street:string city:string state:string manager:string email:string price:string bedrooms:integer bathrooms:integer pets:string image:text user_id:integer
+$ rails db:migrate
 ```
 
 ### User and Apartment Associations
@@ -125,7 +125,7 @@ end
 
 ### Generate views for Devise .erb files (log-in, sign-up etc)
 ```
-rails generate devise:views
+$ rails generate devise:views
 ```
 ### Output:
 ```bash
