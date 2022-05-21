@@ -127,8 +127,8 @@ end
 ```
 rails generate devise:views
 ```
-
-```
+### Output:
+```bash
 dustin@Macbook-Pro apartment-app % rails generate devise:views User
       invoke  Devise::Generators::SharedViewsGenerator
       create    app/views/users/shared
