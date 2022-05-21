@@ -1,4 +1,4 @@
-### Steps taken to create this project
+### ⚙️ Steps taken to create this project
 
 ```bash
 $ rails new apartment-app -d mysql -T
