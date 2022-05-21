@@ -139,3 +139,36 @@ class User < ApplicationRecord
   has_many :apartments
 end
 ```
+
+### Generate views for Devise .erb files (log-in, sign-up etc)
+```
+rails generate devise:views
+```
+
+```
+dustin@Macbook-Pro apartment-app % rails generate devise:views User
+      invoke  Devise::Generators::SharedViewsGenerator
+      create    app/views/users/shared
+      create    app/views/users/shared/_error_messages.html.erb
+      create    app/views/users/shared/_links.html.erb
+      invoke  form_for
+      create    app/views/users/confirmations
+      create    app/views/users/confirmations/new.html.erb
+      create    app/views/users/passwords
+      create    app/views/users/passwords/edit.html.erb
+      create    app/views/users/passwords/new.html.erb
+      create    app/views/users/registrations
+      create    app/views/users/registrations/edit.html.erb
+      create    app/views/users/registrations/new.html.erb
+      create    app/views/users/sessions
+      create    app/views/users/sessions/new.html.erb
+      create    app/views/users/unlocks
+      create    app/views/users/unlocks/new.html.erb
+      invoke  erb
+      create    app/views/users/mailer
+      create    app/views/users/mailer/confirmation_instructions.html.erb
+      create    app/views/users/mailer/email_changed.html.erb
+      create    app/views/users/mailer/password_change.html.erb
+      create    app/views/users/mailer/reset_password_instructions.html.erb
+      create    app/views/users/mailer/unlock_instructions.html.erb
+```
