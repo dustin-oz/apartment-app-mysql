@@ -1,5 +1,4 @@
-
-```
+```bash
 $ rails new apartment-app -d mysql -T
 $ cd apartment-app
 $ brew services start mysql
@@ -92,24 +91,6 @@ yarn add reactstrap
 @import 'bootstrap';
 ```
 
-
-## ⚡️ Getting Started
-Once you're able to clone the repository, within the root of the project directory, run:
-
-```bash
-bundle 
-yarn
-rails db:setup
-```
-
-## 🏁 Start the App
-```bash
-rails s
-```
-
-See what is available already in the application.
-- What can a USER do? 
-- What views (pages, components) are available?
 
 ## 🏡 Apartment Resource
 The Devise User model is going to have an association with the Apartment model. In this situation, the User will have many apartments and the Apartments will belong to a User.
