@@ -13,15 +13,15 @@ class ApartmentsController < ApplicationController
         end
       end
 
-    #   def update
-    #     apartment = Apartment.find(params[:id])
-    #     apartment.update(apartment_params)
-    #     if apartment.valid?
-    #       render json: apartment
-    #     else
-    #       render json: apartment.errors, status: :unprocessable_entity
-    #     end
-    #   end
+      def update
+        apartment = Apartment.find(params[:id])
+        apartment.update(apartment_params)
+        if apartment.valid?
+          render json: apartment
+        else
+          render json: apartment.errors, status: :unprocessable_entity
+        end
+      end
 
     #   def destroy
     #     apartment = Apartment.find(params[:id])
